@@ -53,12 +53,6 @@
 - 🥈 **全国大学生数学建模竞赛** - **二等奖**
 ---
 
-## 📊 **GitHub Stats**
-![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=jiangtao-zha&layout=compact&theme=radical)
-![Anurag's GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=jiangtao-zha&show_icons=true&theme=radical)
-
----
-
 ## 🛠 **Skills**
 - **编程语言**：`C++` `Python`
 - **算法**：强化学习、深度学习、优化算法
@@ -67,6 +61,13 @@
 - **仿真 & 软件**：`Unreal Engine` `QT`
 
 ---
+
+## 📊 **GitHub Stats**
+![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=jiangtao-zha&layout=compact&theme=radical)
+![Anurag's GitHub stats](https://github-readme-stats-sigma-five.vercel.app/api?username=jiangtao-zha&show_icons=true&theme=radical)
+
+---
+
 
 ## 🌍 **Connect with Me**
 [![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jiangtao-zha)
