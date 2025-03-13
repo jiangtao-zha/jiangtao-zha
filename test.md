@@ -1,28 +1,32 @@
-"""
-    Elementwise Add Operator.
-    Add two tensors element-wise
-    The equation is:
+.. _cn_api_paddle_bitwise_and:
 
-    ..  math::
+bitwise_and
+-------------------------------
 
-        Out=X+Y
+.. py:function:: paddle.bitwise_and(x, y, out=None, name=None)
 
-    $X$ the tensor of any dimension.
-    $Y$ the tensor whose dimensions must be less than or equal to the dimensions of $X$.
+对 Tensor ``x`` 和 ``y`` 逐元素进行 ``按位与`` 运算。
 
-    This operator is used in the following cases:
+.. math::
+        Out = X \& Y
 
-    1. The shape of $Y$ is the same with $X$.
-    2. The shape of $Y$ is a continuous subsequence of $X$.
+.. note::
+    ``paddle.bitwise_and`` 遵守 broadcasting，如您想了解更多，请参见 `Tensor 介绍`_ .
 
+    .. _Tensor 介绍: ../../guides/beginner/tensor_cn.html#id7
+参数
+::::::::::::
 
-        For example:
+        - **x** （Tensor）- 输入的 N-D `Tensor`，数据类型为：bool，uint8，int8，int16，int32，int64。
+        - **y** （Tensor）- 输入的 N-D `Tensor`，数据类型为：bool，uint8，int8，int16，int32，int64。
+        - **out** （Tensor，可选）- 输出的结果 `Tensor`，是与输入数据类型相同的 N-D `Tensor`。默认值为 None，此时将创建新的 Tensor 来保存输出结果。
+        - **name** (str，可选) - 具体用法请参见 :ref:`api_guide_Name`，一般无需设置，默认值为 None。
 
-        .. code-block:: text
+返回
+::::::::::::
+ ``按位与`` 运算后的结果 ``Tensor``，数据类型与 ``x`` 相同。
 
-            shape(X) = (2, 3, 4, 5), shape(Y) = (,)
-            shape(X) = (2, 3, 4, 5), shape(Y) = (5,)
-            shape(X) = (2, 3, 4, 5), shape(Y) = (4, 5), with axis=-1(default) or axis=2
-            shape(X) = (2, 3, 4, 5), shape(Y) = (3, 4), with axis=1
-            shape(X) = (2, 3, 4, 5), shape(Y) = (2), with axis=0
-            shape(X) = (2, 3, 4, 5), shape(Y) = (2, 1), with axis=0
+代码示例
+::::::::::::
+
+COPY-FROM: paddle.bitwise_and
